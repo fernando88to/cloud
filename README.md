@@ -20,3 +20,8 @@ $ cd  cloud
 $ npm install
 $ ionic serve
 ```
+
+
+###
+ 
+ionic generate  page pagamentofixo
