@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {PagamentofixoPage} from "../pages/pagamentofixo/pagamentofixo";
+import {PeriodotestePage} from "../pages/periodoteste/periodoteste";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import {PagamentofixoPage} from "../pages/pagamentofixo/pagamentofixo";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage, PagamentofixoPage
+    TabsPage, PagamentofixoPage, PeriodotestePage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,7 @@ import {PagamentofixoPage} from "../pages/pagamentofixo/pagamentofixo";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,PagamentofixoPage
+    TabsPage,PagamentofixoPage,PeriodotestePage
   ],
   providers: [
     StatusBar,

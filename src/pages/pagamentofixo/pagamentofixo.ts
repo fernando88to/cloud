@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {HomePage} from "../home/home";
+import {PeriodotestePage} from "../periodoteste/periodoteste";
 
 /**
  * Generated class for the PagamentofixoPage page.
@@ -21,5 +23,12 @@ export class PagamentofixoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PagamentofixoPage');
   }
+
+    anterior(){
+        this.navCtrl.push(HomePage);
+    }
+    proximo(){
+        this.navCtrl.push(PeriodotestePage);
+    }
 
 }
