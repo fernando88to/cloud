@@ -1,24 +1,22 @@
-# cloud
-
-requisitos
-node instalado
-git
-
-# instalação das ferramentas
-# npm install -g ionic
-
-cria o projeto
-# ionic start cloud tabs
-# npm install
+# Cloud
+Aplicativo mobile utilizando a abordagem PWA, em que o aplicativo para ser utilizado não necessita ser instalado diretamente no smartphone, mas caso o usuário queira instalar ele pode optar por essa opção. 
+Esse aplicativo foi desenvolvindo na Pós Graduação de Desenvolvimento de Aplicativos Móveis na Faculdade Católica do Tocantins, campus Palmas.
 
 
-#roda o projeto
-ionic serve
 
+### Requisitos
+* node instalado
+* git
 
-# como roda o projeto ?
+### Instalação do Ionic
+```shell
+$ npm install -g ionic
+```
 
-git clone https://github.com/fernando88to/cloud.git
-cd  cloud
-npm install
-ionic serve
+### Como rodar o projeto
+```shell
+$ git clone https://github.com/fernando88to/cloud.git
+$ cd  cloud
+$ npm install
+$ ionic serve
+```
