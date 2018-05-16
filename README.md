@@ -6,7 +6,7 @@ Esse aplicativo foi desenvolvindo na Pós Graduação de Desenvolvimento de Apli
 
 ### Requisitos
 * node instalado
-* git
+* git instalado
 
 ### Instalação do Ionic
 ```shell
