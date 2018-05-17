@@ -1,0 +1,56 @@
+<!--
+  Generated template for the CotagratuitaproducaoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cota Gratuita em Produção</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h2>Possuir cota gratuita em produção ?</h2>
+
+
+
+  <ion-row responsive-sm>
+
+
+    <ion-col width-50>
+      <ion-card (click)="selecionarValor(true)" >
+        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>
+        <ion-card-content>
+          <ion-card-title>
+            Sim
+          </ion-card-title>
+          <p>
+
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+
+
+    <ion-col width-50>
+      <ion-card (click)="selecionarValor(false)">
+        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>
+        <ion-card-content>
+          <ion-card-title>
+            Não
+          </ion-card-title>
+
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+
+    </ion-row>
+
+</ion-content>

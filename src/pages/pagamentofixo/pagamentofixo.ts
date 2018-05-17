@@ -25,12 +25,6 @@ export class PagamentofixoPage {
 
   }
 
-    /*anterior(){
-        this.navCtrl.push(HomePage);
-    }
-    proximo(){
-        this.navCtrl.push(PeriodotestePage);
-    }*/
 
 
     selecionarValor(valor){
@@ -39,10 +33,10 @@ export class PagamentofixoPage {
         valor_selecionado["pagamentofixo"] = valor;
         console.log(valor_selecionado);
 
-        //let valor_selecionado = {"moeda":valor};
-        /*this.navCtrl.push(PagamentofixoPage, {
+
+        this.navCtrl.push(PeriodotestePage, {
             valor_selecionado:valor_selecionado
-        });*/
+        });
 
     }
 

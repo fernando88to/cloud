@@ -7,13 +7,50 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Periodo de Teste</ion-title>
+    <ion-title>Período de Teste</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <h2>Permite um período de teste ?</h2>
+  <h2>Permite um período de teste Gratuito ?</h2>
+
+
+
+  <ion-row responsive-sm>
+
+
+    <ion-col width-50>
+      <ion-card (click)="selecionarValor(true)" >
+        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>
+        <ion-card-content>
+          <ion-card-title>
+            Sim
+          </ion-card-title>
+          <p>
+
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+
+
+    <ion-col width-50>
+      <ion-card (click)="selecionarValor(false)">
+        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>
+        <ion-card-content>
+          <ion-card-title>
+            Não
+          </ion-card-title>
+
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+
+
+  </ion-row>
 
 </ion-content>

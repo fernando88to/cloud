@@ -12,6 +12,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {PagamentofixoPage} from "../pages/pagamentofixo/pagamentofixo";
 import {PeriodotestePage} from "../pages/periodoteste/periodoteste";
+import {ServidorbrasilPage} from "../pages/servidorbrasil/servidorbrasil";
+import {CotagratuitaproducaoPage} from "../pages/cotagratuitaproducao/cotagratuitaproducao";
+import {ResultadoPage} from "../pages/resultado/resultado";
 
 @NgModule({
   declarations: [
@@ -19,7 +22,7 @@ import {PeriodotestePage} from "../pages/periodoteste/periodoteste";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage, PagamentofixoPage, PeriodotestePage
+    TabsPage, PagamentofixoPage, PeriodotestePage, ServidorbrasilPage, CotagratuitaproducaoPage, ResultadoPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,7 @@ import {PeriodotestePage} from "../pages/periodoteste/periodoteste";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,PagamentofixoPage,PeriodotestePage
+    TabsPage,PagamentofixoPage,PeriodotestePage, ServidorbrasilPage,CotagratuitaproducaoPage,ResultadoPage
   ],
   providers: [
     StatusBar,
