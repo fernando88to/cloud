@@ -11,6 +11,7 @@ Esse aplicativo foi desenvolvindo na Pós Graduação de Desenvolvimento de Apli
 ### Instalação do Ionic
 ```shell
 $ npm install -g ionic
+$ npm install -g cordova ionic
 ```
 
 ### Como rodar o projeto
@@ -25,3 +26,8 @@ $ ionic serve
 ###
  
 ionic generate  page pagamentofixo
+
+
+
+
+ionic cordova run android --device

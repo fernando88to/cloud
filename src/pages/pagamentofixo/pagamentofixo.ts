@@ -21,14 +21,29 @@ export class PagamentofixoPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PagamentofixoPage');
+      //console.log('ionViewDidLoad PagamentofixoPage');
+
   }
 
-    anterior(){
+    /*anterior(){
         this.navCtrl.push(HomePage);
     }
     proximo(){
         this.navCtrl.push(PeriodotestePage);
+    }*/
+
+
+    selecionarValor(valor){
+        //pega o json
+        let valor_selecionado = this.navParams.get("valor_selecionado");
+        valor_selecionado["pagamentofixo"] = valor;
+        console.log(valor_selecionado);
+
+        //let valor_selecionado = {"moeda":valor};
+        /*this.navCtrl.push(PagamentofixoPage, {
+            valor_selecionado:valor_selecionado
+        });*/
+
     }
 
 }

@@ -11,4 +11,8 @@ export class ContactPage {
 
   }
 
+    enviarEmail(){
+        window.open(`mailto:fernando88to@gmail.com`, '_system');
+    }
+
 }
