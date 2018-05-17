@@ -30,4 +30,8 @@ ionic generate  page pagamentofixo
 
 
 
-ionic cordova run android --device
+$ ionic cordova run android --device
+$ ionic generate provider ServicosCloud
+
+
+

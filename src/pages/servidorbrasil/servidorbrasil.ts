@@ -20,7 +20,6 @@ export class ServidorbrasilPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ServidorbrasilPage');
   }
 
     selecionarValor(valor){

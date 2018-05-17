@@ -15,6 +15,7 @@ import {PeriodotestePage} from "../pages/periodoteste/periodoteste";
 import {ServidorbrasilPage} from "../pages/servidorbrasil/servidorbrasil";
 import {CotagratuitaproducaoPage} from "../pages/cotagratuitaproducao/cotagratuitaproducao";
 import {ResultadoPage} from "../pages/resultado/resultado";
+import { ServicosCloudProvider } from '../providers/servicos-cloud/servicos-cloud';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {ResultadoPage} from "../pages/resultado/resultado";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ServicosCloudProvider
   ]
 })
 export class AppModule {}
