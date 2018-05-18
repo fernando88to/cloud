@@ -32,7 +32,7 @@ export class ResultadoPage {
           this.servicoscloud.todosServidoresCarregados()
               .then(data => {
                   let dados_formulario_usuario = this.navParams.get("valor_selecionado");
-                  let servidores_cadastrados = data.servidores_cadastrados;
+                  let servidores_cadastrados = data["servidores_cadastrados"];
                   for (let value of servidores_cadastrados) {
                       if(value.moeda==dados_formulario_usuario.moeda){
                           value.pontuacao = value.pontuacao +1 ;

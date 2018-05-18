@@ -35,3 +35,4 @@ $ ionic generate provider ServicosCloud
 
 
 
+https://ionicframework.com/docs/v1/guide/publishing.html
