@@ -14,6 +14,15 @@
 
 
 <ion-content padding>
+  <p>Pontuação de cada serviço de acordo com os dados que você informou</p>
+  <p>Click no link para saber mais</p>
+
+  <ion-list>
+    <ion-item *ngFor="let servico of servicos_em_ordem" (click)="abrirLink(servico.id)">
+      {{servico.nome}} <ion-icon class="estrela_amarela" name="star" *ngFor="let dummy of ' '.repeat(servico.pontuacao).split(''), let x = index"></ion-icon>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>
 

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
+
 /**
  * Generated class for the ResultadoPage page.
  *
@@ -15,7 +17,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ResultadoPage {
 
-
+    servicos_em_ordem:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -68,9 +70,11 @@ export class ResultadoPage {
           return a.pontuacao - b.pontuacao;
       });
       servidores.servidores_cadastrados.reverse();
-      for (let value of servidores.servidores_cadastrados) {
+      this.servicos_em_ordem = servidores.servidores_cadastrados
+      /*for (let value of servidores.servidores_cadastrados) {
             console.log(value.nome + " " +  value.pontuacao);
-      }
+      }*/
+
 
       //exibir a uma lista com o ranking pela pontuaçao, ao clicar no servidor mostrar os dados
 
@@ -82,5 +86,23 @@ export class ResultadoPage {
 
 
   }
+
+  abrirLink(indice_servico){
+
+
+      for (let value of this.servicos_em_ordem) {
+          if(value.id==indice_servico){
+              window.open(value.url,'_system', 'location=yes');
+          }
+      }
+
+
+
+
+
+
+  }
+
+
 
 }
