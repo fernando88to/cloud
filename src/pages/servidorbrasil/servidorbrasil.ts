@@ -26,8 +26,6 @@ export class ServidorbrasilPage {
         //pega o json
         let valor_selecionado = this.navParams.get("valor_selecionado");
         valor_selecionado["servidornobrasil"] = valor;
-        console.log(valor_selecionado);
-
 
         this.navCtrl.push(CotagratuitaproducaoPage, {
             valor_selecionado:valor_selecionado

@@ -27,9 +27,6 @@ export class PeriodotestePage {
         //pega o json
         let valor_selecionado = this.navParams.get("valor_selecionado");
         valor_selecionado["periodoteste"] = valor;
-        console.log(valor_selecionado);
-
-
         this.navCtrl.push(ServidorbrasilPage, {
             valor_selecionado:valor_selecionado
         });

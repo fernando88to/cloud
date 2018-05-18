@@ -16,6 +16,7 @@ import {ServidorbrasilPage} from "../pages/servidorbrasil/servidorbrasil";
 import {CotagratuitaproducaoPage} from "../pages/cotagratuitaproducao/cotagratuitaproducao";
 import {ResultadoPage} from "../pages/resultado/resultado";
 import { ServicosCloudProvider } from '../providers/servicos-cloud/servicos-cloud';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ServicosCloudProvider } from '../providers/servicos-cloud/servicos-clou
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+      HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
