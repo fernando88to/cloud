@@ -10,13 +10,15 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ServicosCloudProvider } from '../providers/servicos-cloud/servicos-cloud';
+import {HttpClientModule} from "@angular/common/http";
+
+
 import {PagamentofixoPage} from "../pages/pagamentofixo/pagamentofixo";
 import {PeriodotestePage} from "../pages/periodoteste/periodoteste";
 import {ServidorbrasilPage} from "../pages/servidorbrasil/servidorbrasil";
 import {CotagratuitaproducaoPage} from "../pages/cotagratuitaproducao/cotagratuitaproducao";
 import {ResultadoPage} from "../pages/resultado/resultado";
-import { ServicosCloudProvider } from '../providers/servicos-cloud/servicos-cloud';
-import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,12 +26,13 @@ import {HttpClientModule} from "@angular/common/http";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage, PagamentofixoPage, PeriodotestePage, ServidorbrasilPage, CotagratuitaproducaoPage, ResultadoPage
+    TabsPage, PagamentofixoPage,PeriodotestePage,ServidorbrasilPage,CotagratuitaproducaoPage,ResultadoPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
       HttpClientModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +40,8 @@ import {HttpClientModule} from "@angular/common/http";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,PagamentofixoPage,PeriodotestePage, ServidorbrasilPage,CotagratuitaproducaoPage,ResultadoPage
+    TabsPage,PagamentofixoPage,PeriodotestePage,ServidorbrasilPage,CotagratuitaproducaoPage,ResultadoPage
+
   ],
   providers: [
     StatusBar,

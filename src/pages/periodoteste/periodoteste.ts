@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {  NavController, NavParams } from 'ionic-angular';
 import {ServidorbrasilPage} from "../servidorbrasil/servidorbrasil";
 
 /**
@@ -9,7 +9,7 @@ import {ServidorbrasilPage} from "../servidorbrasil/servidorbrasil";
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
 @Component({
   selector: 'page-periodoteste',
   templateUrl: 'periodoteste.html',
