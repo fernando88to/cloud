@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  NavController, NavParams } from 'ionic-angular';
+import {AlertController, NavController, NavParams} from 'ionic-angular';
 import {ServicosCloudProvider} from "../../providers/servicos-cloud/servicos-cloud";
 
 import {HomePage} from "../home/home";
@@ -22,13 +22,16 @@ export class ResultadoPage {
 
     servicos_em_ordem:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public servicoscloud:ServicosCloudProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public servicoscloud:ServicosCloudProvider,
+              private alertCtrl: AlertController
+  ) {
 
 
 
   }
 
   ionViewDidLoad() {
+            let that = this
           this.servicoscloud.todosServidoresCarregados()
               .then(data => {
                   let dados_formulario_usuario = this.navParams.get("valor_selecionado");
@@ -69,8 +72,13 @@ export class ResultadoPage {
 
 
               }, function(err) {
-                  //colocar uma alerta aqui que não consegui se comunicar
-                  console.log(err); // Error: "It broke"
+                  let alert = that.alertCtrl.create({
+                      title: 'Alerta',
+                      subTitle: 'Erro na consulta, verifique sua internet',
+                      buttons: ['Dismiss']
+                  });
+                  alert.present();
+
               });
 
 
