@@ -4,10 +4,172 @@ webpackJsonp([5],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagamentofixoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__periodoteste_periodoteste__ = __webpack_require__(101);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the PagamentofixoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var PagamentofixoPage = /** @class */ (function () {
+    function PagamentofixoPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    PagamentofixoPage.prototype.ionViewDidLoad = function () {
+    };
+    PagamentofixoPage.prototype.selecionarValor = function (valor) {
+        var valor_selecionado = this.navParams.get("valor_selecionado");
+        valor_selecionado["pagamentofixo"] = valor;
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__periodoteste_periodoteste__["a" /* PeriodotestePage */], {
+            valor_selecionado: valor_selecionado
+        });
+    };
+    PagamentofixoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-pagamentofixo',template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/pagamentofixo/pagamentofixo.html"*/'<!--\n  Generated template for the PagamentofixoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Pagamento Fixo</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h2>Pagar um valor Fixo ?</h2>\n\n\n\n  <ion-row responsive-sm>\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(true)" >\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Sim\n          </ion-card-title>\n          <p>\n\n          </p>\n        </ion-card-content>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(false)">\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Não\n          </ion-card-title>\n\n        </ion-card-content>\n      </ion-card>\n\n    </ion-col>\n\n\n  </ion-row>\n\n\n\n</ion-content>\n\n<!--<ion-footer no-shadow>\n  <ion-toolbar position="bottom">\n    <ion-row>\n      <ion-col col-6><button ion-button full (click)="anterior()">Anterior</button></ion-col>\n      <ion-col col-6><button ion-button full (click)="proximo()">Próximo</button></ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>-->\n\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/pagamentofixo/pagamentofixo.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], PagamentofixoPage);
+    return PagamentofixoPage;
+}());
+
+//# sourceMappingURL=pagamentofixo.js.map
+
+/***/ }),
+
+/***/ 101:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PeriodotestePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__servidorbrasil_servidorbrasil__ = __webpack_require__(102);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the PeriodotestePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var PeriodotestePage = /** @class */ (function () {
+    function PeriodotestePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    PeriodotestePage.prototype.ionViewDidLoad = function () {
+        //console.log('ionViewDidLoad PeriodotestePage');
+    };
+    PeriodotestePage.prototype.selecionarValor = function (valor) {
+        //pega o json
+        var valor_selecionado = this.navParams.get("valor_selecionado");
+        valor_selecionado["periodoteste"] = valor;
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__servidorbrasil_servidorbrasil__["a" /* ServidorbrasilPage */], {
+            valor_selecionado: valor_selecionado
+        });
+    };
+    PeriodotestePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-periodoteste',template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/periodoteste/periodoteste.html"*/'<!--\n  Generated template for the PeriodotestePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Período de Teste</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h2>Permite um período de teste Gratuito ?</h2>\n\n\n\n  <ion-row responsive-sm>\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(true)" >\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Sim\n          </ion-card-title>\n          <p>\n\n          </p>\n        </ion-card-content>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(false)">\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Não\n          </ion-card-title>\n\n        </ion-card-content>\n      </ion-card>\n\n    </ion-col>\n\n\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/periodoteste/periodoteste.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], PeriodotestePage);
+    return PeriodotestePage;
+}());
+
+//# sourceMappingURL=periodoteste.js.map
+
+/***/ }),
+
+/***/ 102:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServidorbrasilPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cotagratuitaproducao_cotagratuitaproducao__ = __webpack_require__(103);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the ServidorbrasilPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ServidorbrasilPage = /** @class */ (function () {
+    function ServidorbrasilPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    ServidorbrasilPage.prototype.ionViewDidLoad = function () {
+    };
+    ServidorbrasilPage.prototype.selecionarValor = function (valor) {
+        //pega o json
+        var valor_selecionado = this.navParams.get("valor_selecionado");
+        valor_selecionado["servidornobrasil"] = valor;
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__cotagratuitaproducao_cotagratuitaproducao__["a" /* CotagratuitaproducaoPage */], {
+            valor_selecionado: valor_selecionado
+        });
+    };
+    ServidorbrasilPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-servidorbrasil',template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/servidorbrasil/servidorbrasil.html"*/'<!--\n  Generated template for the ServidorbrasilPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Servidor no Brasil</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <h2>Os servidores devem está localizados no Brasil ?</h2>\n  <ion-row responsive-sm>\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(true)" >\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Sim\n          </ion-card-title>\n          <p>\n\n          </p>\n        </ion-card-content>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(false)">\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Não\n          </ion-card-title>\n\n        </ion-card-content>\n      </ion-card>\n\n    </ion-col>\n\n\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/servidorbrasil/servidorbrasil.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], ServidorbrasilPage);
+    return ServidorbrasilPage;
+}());
+
+//# sourceMappingURL=servidorbrasil.js.map
+
+/***/ }),
+
+/***/ 103:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CotagratuitaproducaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__resultado_resultado__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__resultado_resultado__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -54,7 +216,7 @@ var CotagratuitaproducaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 101:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -146,168 +308,6 @@ var ResultadoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 102:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagamentofixoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__periodoteste_periodoteste__ = __webpack_require__(103);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the PagamentofixoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var PagamentofixoPage = /** @class */ (function () {
-    function PagamentofixoPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    PagamentofixoPage.prototype.ionViewDidLoad = function () {
-    };
-    PagamentofixoPage.prototype.selecionarValor = function (valor) {
-        var valor_selecionado = this.navParams.get("valor_selecionado");
-        valor_selecionado["pagamentofixo"] = valor;
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__periodoteste_periodoteste__["a" /* PeriodotestePage */], {
-            valor_selecionado: valor_selecionado
-        });
-    };
-    PagamentofixoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pagamentofixo',template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/pagamentofixo/pagamentofixo.html"*/'<!--\n  Generated template for the PagamentofixoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Pagamento Fixo</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h2>Pagar um valor Fixo ?</h2>\n\n\n\n  <ion-row responsive-sm>\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(true)" >\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Sim\n          </ion-card-title>\n          <p>\n\n          </p>\n        </ion-card-content>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(false)">\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Não\n          </ion-card-title>\n\n        </ion-card-content>\n      </ion-card>\n\n    </ion-col>\n\n\n  </ion-row>\n\n\n\n</ion-content>\n\n<!--<ion-footer no-shadow>\n  <ion-toolbar position="bottom">\n    <ion-row>\n      <ion-col col-6><button ion-button full (click)="anterior()">Anterior</button></ion-col>\n      <ion-col col-6><button ion-button full (click)="proximo()">Próximo</button></ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>-->\n\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/pagamentofixo/pagamentofixo.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], PagamentofixoPage);
-    return PagamentofixoPage;
-}());
-
-//# sourceMappingURL=pagamentofixo.js.map
-
-/***/ }),
-
-/***/ 103:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PeriodotestePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__servidorbrasil_servidorbrasil__ = __webpack_require__(104);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the PeriodotestePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var PeriodotestePage = /** @class */ (function () {
-    function PeriodotestePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    PeriodotestePage.prototype.ionViewDidLoad = function () {
-        //console.log('ionViewDidLoad PeriodotestePage');
-    };
-    PeriodotestePage.prototype.selecionarValor = function (valor) {
-        //pega o json
-        var valor_selecionado = this.navParams.get("valor_selecionado");
-        valor_selecionado["periodoteste"] = valor;
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__servidorbrasil_servidorbrasil__["a" /* ServidorbrasilPage */], {
-            valor_selecionado: valor_selecionado
-        });
-    };
-    PeriodotestePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-periodoteste',template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/periodoteste/periodoteste.html"*/'<!--\n  Generated template for the PeriodotestePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Período de Teste</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h2>Permite um período de teste Gratuito ?</h2>\n\n\n\n  <ion-row responsive-sm>\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(true)" >\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Sim\n          </ion-card-title>\n          <p>\n\n          </p>\n        </ion-card-content>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(false)">\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Não\n          </ion-card-title>\n\n        </ion-card-content>\n      </ion-card>\n\n    </ion-col>\n\n\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/periodoteste/periodoteste.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], PeriodotestePage);
-    return PeriodotestePage;
-}());
-
-//# sourceMappingURL=periodoteste.js.map
-
-/***/ }),
-
-/***/ 104:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServidorbrasilPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cotagratuitaproducao_cotagratuitaproducao__ = __webpack_require__(100);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the ServidorbrasilPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ServidorbrasilPage = /** @class */ (function () {
-    function ServidorbrasilPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    ServidorbrasilPage.prototype.ionViewDidLoad = function () {
-    };
-    ServidorbrasilPage.prototype.selecionarValor = function (valor) {
-        //pega o json
-        var valor_selecionado = this.navParams.get("valor_selecionado");
-        valor_selecionado["servidornobrasil"] = valor;
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__cotagratuitaproducao_cotagratuitaproducao__["a" /* CotagratuitaproducaoPage */], {
-            valor_selecionado: valor_selecionado
-        });
-    };
-    ServidorbrasilPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-servidorbrasil',template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/servidorbrasil/servidorbrasil.html"*/'<!--\n  Generated template for the ServidorbrasilPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Servidor no Brasil</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <h2>Os servidores devem está localizados no Brasil ?</h2>\n  <ion-row responsive-sm>\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(true)" >\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Sim\n          </ion-card-title>\n          <p>\n\n          </p>\n        </ion-card-content>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col width-50>\n      <ion-card (click)="selecionarValor(false)">\n        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>\n        <ion-card-content>\n          <ion-card-title>\n            Não\n          </ion-card-title>\n\n        </ion-card-content>\n      </ion-card>\n\n    </ion-col>\n\n\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/servidorbrasil/servidorbrasil.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], ServidorbrasilPage);
-    return ServidorbrasilPage;
-}());
-
-//# sourceMappingURL=servidorbrasil.js.map
-
-/***/ }),
-
 /***/ 116:
 /***/ (function(module, exports) {
 
@@ -330,11 +330,11 @@ webpackEmptyAsyncContext.id = 116;
 
 var map = {
 	"../pages/cotagratuitaproducao/cotagratuitaproducao.module": [
-		284,
+		285,
 		4
 	],
 	"../pages/pagamentofixo/pagamentofixo.module": [
-		285,
+		284,
 		3
 	],
 	"../pages/periodoteste/periodoteste.module": [
@@ -342,11 +342,11 @@ var map = {
 		2
 	],
 	"../pages/resultado/resultado.module": [
-		287,
+		288,
 		1
 	],
 	"../pages/servidorbrasil/servidorbrasil.module": [
-		288,
+		287,
 		0
 	]
 };
@@ -445,7 +445,7 @@ var TabsPage = /** @class */ (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Formulário" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Sobre" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Código Fonte" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/tabs/tabs.html"*/'<ion-tabs selectedIndex="1">\n  <ion-tab [root]="tab1Root" tabTitle="Formulário" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Sobre" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Código Fonte" tabIcon="bug"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -478,13 +478,18 @@ var AboutPage = /** @class */ (function () {
     function AboutPage(navCtrl) {
         this.navCtrl = navCtrl;
     }
+    AboutPage.prototype.comecar = function () {
+        //manda para o formulário
+        this.navCtrl.parent.select(0);
+    };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>Esse aplicativo tem por objetivo auxiliar </p>\n\n</ion-content>\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Sobre\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>Esse aplicativo tem por objetivo auxiliar </p>\n\n</ion-content>\n\n<ion-footer no-shadow>\n  <ion-toolbar position="bottom">\n    <ion-row>\n      <ion-col col-12><button ion-button full (click)="comecar()" >Começar</button></ion-col>\n\n    </ion-row>\n  </ion-toolbar>\n</ion-footer>\n\n'/*ion-inline-end:"/home/fernando/pos_graduacao/repositorio/cloud/src/pages/about/about.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
     ], AboutPage);
     return AboutPage;
+    var _a;
 }());
 
 //# sourceMappingURL=about.js.map
@@ -558,11 +563,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_pagamentofixo_pagamentofixo__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_periodoteste_periodoteste__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_servidorbrasil_servidorbrasil__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_cotagratuitaproducao_cotagratuitaproducao__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_resultado_resultado__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_pagamentofixo_pagamentofixo__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_periodoteste_periodoteste__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_servidorbrasil_servidorbrasil__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_cotagratuitaproducao_cotagratuitaproducao__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_resultado_resultado__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_servicos_cloud_servicos_cloud__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_common_http__ = __webpack_require__(160);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -604,11 +609,11 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/cotagratuitaproducao/cotagratuitaproducao.module#CotagratuitaproducaoPageModule', name: 'CotagratuitaproducaoPage', segment: 'cotagratuitaproducao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pagamentofixo/pagamentofixo.module#PagamentofixoPageModule', name: 'PagamentofixoPage', segment: 'pagamentofixo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cotagratuitaproducao/cotagratuitaproducao.module#CotagratuitaproducaoPageModule', name: 'CotagratuitaproducaoPage', segment: 'cotagratuitaproducao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/periodoteste/periodoteste.module#PeriodotestePageModule', name: 'PeriodotestePage', segment: 'periodoteste', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/resultado/resultado.module#ResultadoPageModule', name: 'ResultadoPage', segment: 'resultado', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/servidorbrasil/servidorbrasil.module#ServidorbrasilPageModule', name: 'ServidorbrasilPage', segment: 'servidorbrasil', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/servidorbrasil/servidorbrasil.module#ServidorbrasilPageModule', name: 'ServidorbrasilPage', segment: 'servidorbrasil', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/resultado/resultado.module#ResultadoPageModule', name: 'ResultadoPage', segment: 'resultado', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_16__angular_common_http__["b" /* HttpClientModule */]
@@ -689,7 +694,7 @@ var MyApp = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagamentofixo_pagamentofixo__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagamentofixo_pagamentofixo__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

@@ -11,4 +11,10 @@ export class AboutPage {
 
   }
 
+    comecar(){
+        //manda para o formulário
+        this.navCtrl.parent.select(0);
+
+    }
+
 }
