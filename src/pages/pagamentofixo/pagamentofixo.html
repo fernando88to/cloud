@@ -23,15 +23,14 @@
 
     <ion-col width-50>
       <ion-card (click)="selecionarValor(true)" >
-        <img src="assets/imgs/yes-icon.png"/>
+        <img src="assets/imgs/yes-icon.png" style="width: 100%;"/>
         <ion-card-content>
           <ion-card-title>
             Sim
           </ion-card-title>
-          <ul>
-            <li>Geralmente existe uma cota de uso</li>
-            <li>Recomandado quando não se tem muitos acesso no começo</li>
-          </ul>
+
+          <p>Geralmente existe uma cota de uso</p>
+          <p>Recomandado quando não se tem muitos acesso no começo</p>
 
         </ion-card-content>
       </ion-card>
@@ -41,15 +40,15 @@
 
     <ion-col width-50>
       <ion-card (click)="selecionarValor(false)">
-        <img src="assets/imgs/no-icon.png"/>
+        <img src="assets/imgs/no-icon.png" style="width: 100%;"/>
         <ion-card-content>
           <ion-card-title>
             Não
           </ion-card-title>
-          <ul>
-            <li>Geralmente não existe cota de uso</li>
-            <li>Se tiver poucos acesso o valor a ser pago pode ser menor do que o fixo.</li>
-          </ul>
+
+            <p>Geralmente não existe cota de uso</p>
+            <p>Se tiver poucos acesso o valor a ser pago pode ser menor do que o fixo.</p>
+
 
 
 
