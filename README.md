@@ -40,4 +40,3 @@ https://ionicframework.com/docs/v1/guide/publishing.html
 
 pwa
 ionic build browser --prod
-ionic build browser --prod
