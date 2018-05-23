@@ -13,30 +13,48 @@ Esse aplicativo foi desenvolvindo na Pós Graduação de Desenvolvimento de Apli
 $ npm install -g ionic
 $ npm install -g cordova ionic
 ```
+### Como baixar o código fonte
 
-### Como rodar o projeto
 ```shell
 $ git clone https://github.com/fernando88to/cloud.git
 $ cd  cloud
+```
+
+### Como rodar o projeto no navegador
+```shell
 $ npm install
 $ ionic serve
 ```
 
 
-###
- 
-ionic generate  page pagamentofixo
-
-
-
-
+### Como rodar o projeto no celular android
+```shell
 $ ionic cordova run android --device
-$ ionic generate provider ServicosCloud
+``` 
+ 
+### Como publicar o projeto na playstore 
+
+* https://ionicframework.com/docs/v1/guide/publishing.html
+
+
+### Como publicar o projeto em pwa
+
+* Editar o arquivo index.html conforme https://blog.ionicframework.com/how-to-make-pwas-with-ionic/
+
+* Rodar o comando abaixo
+
+```shell
+$ ionic build browser --prod
+``` 
+
+* Todo o html será alocado dentro do diretório wwww, copiar esses arquivos para um servidor com suporte a https
 
 
 
-https://ionicframework.com/docs/v1/guide/publishing.html
 
 
-pwa
-ionic build browser --prod
+
+
+
+
+
